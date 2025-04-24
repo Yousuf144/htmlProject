@@ -1,0 +1,66 @@
+css
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #010101;
+  outline: none;
+  border: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: rgb(175, 151, 175);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+   background-color:rgb(168, 150, 168) ; 
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-links {
+  width: 40%;
+}
+
+.nav-links > ul {
+  display: flex;
+  justify-content:space-between ;
+
+  
+}
+
+@media (max-width: 501px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-logo {
+    width: 95px;
+  }
+  .nav-menu {
+    display: block;
+  }
+}
